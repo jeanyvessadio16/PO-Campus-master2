@@ -1,3 +1,4 @@
+import { ModeToggle } from "@/components/layout/theme/modeToggle";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -15,6 +16,7 @@ export default function Home() {
                 Se connecter
               </Link>
             </Button>
+            <ModeToggle />
           </div>
         </section>
       </main>
