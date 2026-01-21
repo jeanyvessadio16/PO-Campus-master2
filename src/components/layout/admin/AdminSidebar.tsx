@@ -40,6 +40,7 @@ const items = [
   },
 ];
 
+// Barre latérale pour administrateur
 export function AdminSidebar() {
   return (
     <Sidebar>

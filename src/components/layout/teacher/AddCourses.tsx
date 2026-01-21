@@ -13,6 +13,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Plus } from "lucide-react";
 
+// bouton ajouter cours
 export function DialogAddCourse() {
   return (
     <Dialog>

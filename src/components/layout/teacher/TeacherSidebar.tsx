@@ -40,6 +40,7 @@ const items = [
   },
 ];
 
+// Barre latérale pour enseignant
 export function TeacherSidebar() {
   return (
     <Sidebar>

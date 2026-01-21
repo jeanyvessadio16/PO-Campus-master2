@@ -5,6 +5,7 @@ import { ModeToggle } from "../theme/modeToggle";
 import { DialogAddCourse } from "./AddCourses";
 import { DialogAddDevoirs } from "./AddDevoirs";
 
+// header pour enseignant avec bouton d'ajout de cours et devoirs, barre de recherche, notifications et mode toggle
 export default function TeacherHeader() {
   return (
     <>

@@ -3,6 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Bell } from "lucide-react";
 import { ModeToggle } from "../theme/modeToggle";
 
+// header pour étudiant avec barre de recherche, notifications et mode toggle
 export default function StudentHeader() {
   return (
     <>

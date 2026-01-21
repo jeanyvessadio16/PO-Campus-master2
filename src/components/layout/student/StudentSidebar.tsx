@@ -40,6 +40,7 @@ const items = [
   },
 ];
 
+// Barre latérale pour étudiant
 export function StudentSidebar() {
   return (
     <Sidebar>
