@@ -1,6 +1,6 @@
 "use client";
 
-import { Home, BookOpen, CheckSquare, FileText, Bell, LogOut, User } from "lucide-react";
+import { Home, BookOpen, CheckSquare, FileText, Bell } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { cn } from "@/lib/utils";

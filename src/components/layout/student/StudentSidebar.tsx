@@ -1,6 +1,6 @@
 "use client";
 
-import { Home, BookOpen, CheckSquare, FileText, Bell, LogOut, User } from "lucide-react";
+import { Home, BookOpen, CheckSquare, FileText, Bell } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
@@ -62,8 +62,8 @@ export function StudentSidebar() {
                 const isActive = pathname === item.url;
                 return (
                   <SidebarMenuItem key={item.title}>
-                    <SidebarMenuButton 
-                      asChild 
+                    <SidebarMenuButton
+                      asChild
                       isActive={isActive}
                       tooltip={item.title}
                       className={cn(
@@ -83,17 +83,17 @@ export function StudentSidebar() {
           </SidebarGroupContent>
         </SidebarGroup>
       </SidebarContent>
-      
+
       <SidebarFooter className="border-t p-4">
         <div className="flex items-center gap-3">
-            <Avatar className="h-9 w-9 border">
-              <AvatarImage src="/avatars/student.png" alt="Student" />
-              <AvatarFallback>ST</AvatarFallback>
-            </Avatar>
-            <div className="flex flex-col group-data-[collapsible=icon]:hidden">
-              <span className="text-sm font-medium">Étudiant</span>
-              <span className="text-xs text-muted-foreground">student@campus.com</span>
-            </div>
+          <Avatar className="h-9 w-9 border">
+            <AvatarImage src="/avatars/student.png" alt="Student" />
+            <AvatarFallback>ST</AvatarFallback>
+          </Avatar>
+          <div className="flex flex-col group-data-[collapsible=icon]:hidden">
+            <span className="text-sm font-medium">Étudiant</span>
+            <span className="text-xs text-muted-foreground">student@campus.com</span>
+          </div>
         </div>
       </SidebarFooter>
     </Sidebar>

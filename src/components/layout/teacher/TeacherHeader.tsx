@@ -1,6 +1,6 @@
 "use client";
 
-import { Bell, Search, PlusCircle } from "lucide-react";
+import { Bell, Search } from "lucide-react";
 import { ModeToggle } from "../theme/modeToggle";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
