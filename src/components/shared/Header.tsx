@@ -9,8 +9,8 @@ import { ModeToggle } from "../layout/theme/modeToggle";
 export default function Header() {
   // links nav
   const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "#aboutCampusMaster" },
+    { name: "Accueil", href: "/" },
+    { name: "A propos", href: "#aboutCampusMaster" },
     { name: "Inscription", href: "/signup" },
   ];
 
