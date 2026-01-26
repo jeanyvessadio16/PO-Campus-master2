@@ -5,6 +5,7 @@ import StudentHeader from "@/components/layout/student/StudentHeader";
 
 export const metadata: Metadata = {
   title: "Student Dashboard",
+  description: "Student dashboard layout",
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {

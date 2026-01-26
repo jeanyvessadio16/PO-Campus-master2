@@ -68,11 +68,18 @@ export function StudentSidebar() {
                       tooltip={item.title}
                       className={cn(
                         "transition-all duration-200",
-                        isActive ? "bg-primary text-primary-foreground font-medium" : "text-muted-foreground hover:text-foreground"
+                        isActive
+                          ? "bg-primary text-primary-foreground font-medium"
+                          : "text-muted-foreground hover:text-foreground",
                       )}
                     >
                       <Link href={item.url}>
-                        <item.icon className={cn("size-4", isActive && "text-primary-foreground")} />
+                        <item.icon
+                          className={cn(
+                            "size-4",
+                            isActive && "text-primary-foreground",
+                          )}
+                        />
                         <span>{item.title}</span>
                       </Link>
                     </SidebarMenuButton>
@@ -83,7 +90,7 @@ export function StudentSidebar() {
           </SidebarGroupContent>
         </SidebarGroup>
       </SidebarContent>
-
+      {/* sidebar-footer */}
       <SidebarFooter className="border-t p-4">
         <div className="flex items-center gap-3">
           <Avatar className="h-9 w-9 border">
@@ -92,7 +99,9 @@ export function StudentSidebar() {
           </Avatar>
           <div className="flex flex-col group-data-[collapsible=icon]:hidden">
             <span className="text-sm font-medium">Étudiant</span>
-            <span className="text-xs text-muted-foreground">student@campus.com</span>
+            <span className="text-xs text-muted-foreground">
+              student@campus.com
+            </span>
           </div>
         </div>
       </SidebarFooter>
