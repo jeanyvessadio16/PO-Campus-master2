@@ -1,5 +1,6 @@
 // Authentication
 export { useAuth } from "./useAuth";
+export { usePermission } from "./usePermission";
 
 // Data Fetching
 export { useCourses } from "./useCourses";
