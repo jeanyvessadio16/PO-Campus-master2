@@ -14,7 +14,14 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import Link from "next/link";
 
 export default function SignupPage() {
   const form = useForm<User>({
@@ -31,7 +38,7 @@ export default function SignupPage() {
   return (
     <>
       <section className="min-h-screen flex flex-col justify-center items-center py-10">
-        <Card className="min-w-96">
+        <Card className="min-w-96 bg-white text-black shadow-md">
           <CardHeader>
             <CardTitle className="text-3xl font-bold text-center">
               Sign Up
@@ -101,12 +108,20 @@ export default function SignupPage() {
                 />
                 {/* Role selection */}
                 {/* Submit button */}
-                <Button type="submit" className="w-full">
+                <Button type="submit" className="w-full bg-black text-white">
                   Sign Up
                 </Button>
               </form>
             </Form>
           </CardContent>
+          <CardFooter>
+            <Link
+              href="/login"
+              className="text-sm text-blue-500 hover:underline"
+            >
+              Avez-vous un compte? Connectez-vous
+            </Link>
+          </CardFooter>
         </Card>
       </section>
     </>

@@ -10,7 +10,7 @@ export default function Header() {
   // links nav
   const navLinks = [
     { name: "Accueil", href: "/" },
-    { name: "A propos", href: "#aboutCampusMaster" },
+    { name: "A propos", href: "#features" },
     { name: "Inscription", href: "/signup" },
   ];
 
