@@ -55,12 +55,11 @@ export const config = {
   matcher: [
     /*
      * Matcher toutes les routes sauf:
-     * - api (les routes API)
      * - _next/static (les fichiers statiques)
      * - _next/image (les fichiers d'optimisation d'images)
      * - favicon.ico (le favicon)
      * - public (les fichiers publics)
      */
-    "/((?!api|_next/static|_next/image|favicon.ico|public).*)",
+    "/((?!_next/static|_next/image|favicon.ico|public).*)",
   ],
 };
