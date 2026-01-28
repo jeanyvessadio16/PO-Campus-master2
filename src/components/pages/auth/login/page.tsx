@@ -79,7 +79,10 @@ export default function LoginPage() {
                 />
                 {/* Role selection */}
                 {/* Submit button */}
-                <Button type="submit" className="w-full bg-black text-white">
+                <Button
+                  type="submit"
+                  className="w-full bg-black hover:bg-gray-800 text-white"
+                >
                   Login
                 </Button>
               </form>

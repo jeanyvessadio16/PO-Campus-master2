@@ -108,7 +108,10 @@ export default function SignupPage() {
                 />
                 {/* Role selection */}
                 {/* Submit button */}
-                <Button type="submit" className="w-full bg-black text-white">
+                <Button
+                  type="submit"
+                  className="w-full bg-black text-white hover:bg-gray-800"
+                >
                   Sign Up
                 </Button>
               </form>
