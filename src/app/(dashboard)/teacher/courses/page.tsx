@@ -12,7 +12,6 @@ import {
     FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 
@@ -21,8 +20,7 @@ export default function AddCoursePage() {
         resolver: zodResolver(courseSchema),
         defaultValues: {
             title: "",
-            instructions: "",
-            // dueDate will need to be handled carefully with date inputs
+            semestre: "",
         },
     });
 
@@ -59,34 +57,12 @@ export default function AddCoursePage() {
                             />
                             <FormField
                                 control={form.control}
-                                name="instructions"
+                                name="semestre"
                                 render={({ field }) => (
                                     <FormItem>
-                                        <FormLabel>Consignes</FormLabel>
+                                        <FormLabel>Semestre</FormLabel>
                                         <FormControl>
-                                            <Textarea
-                                                placeholder="Instructions détaillées pour le cours..."
-                                                className="min-h-[120px]"
-                                                {...field}
-                                            />
-                                        </FormControl>
-                                        <FormMessage />
-                                    </FormItem>
-                                )}
-                            />
-                            <FormField
-                                control={form.control}
-                                name="dueDate"
-                                render={({ field }) => (
-                                    <FormItem>
-                                        <FormLabel>Date limite</FormLabel>
-                                        <FormControl>
-                                            <Input
-                                                type="datetime-local"
-                                                {...field}
-                                                value={field.value ? new Date(field.value).toISOString().slice(0, 16) : ""}
-                                                onChange={(e) => field.onChange(new Date(e.target.value))}
-                                            />
+                                            <Input placeholder="Semestre 1" {...field} />
                                         </FormControl>
                                         <FormMessage />
                                     </FormItem>

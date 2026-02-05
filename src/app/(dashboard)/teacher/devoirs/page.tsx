@@ -35,9 +35,9 @@ export default function AddAssignmentPage() {
         resolver: zodResolver(assignmentSchema),
         defaultValues: {
             title: "",
-            description: "",
+            instructions: "",
             courseId: "",
-            // Date is handled a bit differently in forms usually, but we'll manage it
+            dueDate: new Date(),
         },
     });
 
@@ -119,10 +119,10 @@ export default function AddAssignmentPage() {
 
                             <FormField
                                 control={form.control}
-                                name="description"
+                                name="instructions"
                                 render={({ field }) => (
                                     <FormItem>
-                                        <FormLabel>Description</FormLabel>
+                                        <FormLabel>Instructions</FormLabel>
                                         <FormControl>
                                             <Textarea
                                                 placeholder="Instructions détaillées pour le devoir..."

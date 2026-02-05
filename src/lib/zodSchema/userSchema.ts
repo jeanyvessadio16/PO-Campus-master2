@@ -2,12 +2,12 @@ import { z } from "zod";
 
 export const userScheme = z.object({
   id: z.string().min(1, { message: "L'ID est requis" }),
-  firstname: z
+  firstName: z
     .string()
     .min(2, { message: "Le prénom doit contenir au moins 2 caractères" })
     .max(50, { message: "Le prénom ne doit pas dépasser 50 caractères" })
     .trim(),
-  lastname: z
+  lastName: z
     .string()
     .min(2, { message: "Le nom doit contenir au moins 2 caractères" })
     .max(50, { message: "Le nom ne doit pas dépasser 50 caractères" })
